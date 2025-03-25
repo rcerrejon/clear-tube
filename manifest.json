@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Clear Tube",
+  "version": "1.0",
+  "description": "Minimalist and distraction-free version of Youtube, with direct or hourly activation.",
+  "author": "rafaelcerrejon@gmail.com",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "32": "icon32.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "permissions": ["activeTab", "storage"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["styles.css", "about.html", "about.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

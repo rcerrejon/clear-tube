@@ -1,0 +1,33 @@
+/* (¯`·._.··¸.-~*´¨¯¨`*·~-., -( MAIN PAGE )-, .-~*´¨¯¨`*·~-.¸··._.·´¯) */
+
+/* Remove Items */
+.style-scope ytd-rich-grid-renderer, #guide-button, #items, #voice-search-button, #buttons, #guide-inner-content {
+  display: none !important;
+}
+
+/* Positioning */
+#container {
+  justify-content: center !important;
+}
+
+/* (¯`·._.··¸.-~*´¨¯¨`*·~-., -( SEARCH PAGE )-, .-~*´¨¯¨`*·~-.¸··._.·´¯) */
+
+/* Remove Items */
+#header, .yt-lockup-metadata-view-model-wiz__metadata, .style-scope ytd-video-renderer byline-separated, #channel-info,
+#metadata-line, #badges, .metadata-snippet-container, #button, #content-section, #title-container, #more, #all,
+#right-arrow, .metadata-snippet-container-one-line {
+  display: none !important;
+}
+
+/* border section items */
+.ytd-item-section-renderer {
+  border-width: 0 !important;
+}
+
+/* (¯`·._.··¸.-~*´¨¯¨`*·~-., -( PLAYER PAGE )-, .-~*´¨¯¨`*·~-.¸··._.·´¯) */
+
+/* Remove Items */
+#top-row, #teaser-carousel, .style-scope ytd-rich-metadata-row-renderer, #comments, #secondary, #show-hide-button,
+#actions {
+  display: none !important;
+}

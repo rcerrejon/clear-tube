@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<!-- (¯`·._.··¸.-~*´¨¯¨`*·~-.,-( HEAD )-,.-~*´¨¯¨`*·~-.¸··._.·´¯) -->
+
+<head>
+  <title>Clear Tube</title>
+  <style>
+    body {
+      width: 280px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+      position: relative;
+      background-color: #0f0f0f;
+      color: #f1f1f1;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      margin: 0;
+      color: #4285f4;
+    }
+
+    .about-btn {
+      background-color: #4285f4;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 12px;
+      margin-top: 0;
+    }
+
+    .about-btn:hover {
+      background-color: #3367d6;
+    }
+
+    label {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 10px;
+    }
+
+    .time-range {
+      margin-top: 10px;
+      padding: 10px;
+      border: 1px solid #cccccc;
+      border-radius: 4px;
+    }
+
+    .time-inputs {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+
+    .time-inputs input {
+      width: 100px;
+    }
+
+    .time-inputs span {
+      padding: 0 10px;
+      align-self: center;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 5px 10px;
+      background-color: #4285f4;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    #save-times {
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #3367d6;
+    }
+
+    .status {
+      margin-top: 10px;
+      font-size: 0.8em;
+      color: #666666;
+    }
+  </style>
+</head>
+
+<!-- (¯`·._.··¸.-~*´¨¯¨`*·~-.,-( BODY )-,.-~*´¨¯¨`*·~-.¸··._.·´¯) -->
+
+<body>
+  <div class="header">
+    <h1>Clear Tube</h1>
+    <button class="about-btn" id="about-btn">About</button>
+  </div>
+
+  <!-- New radio group for mode selection -->
+  <div class="mode-options">
+    <label>
+      <input type="radio" name="mode" value="off">
+      Off
+    </label>
+    <label>
+      <input type="radio" name="mode" value="always">
+      Always On
+    </label>
+    <label>
+      <input type="radio" name="mode" value="auto">
+      Time Based
+    </label>
+  </div>
+
+  <div class="time-range" id="time-range-container">
+    <div>Time Range:</div>
+    <div class="time-inputs">
+      <input type="time" id="start-time" value="08:00">
+      <span>to</span>
+      <input type="time" id="end-time" value="16:00">
+    </div>
+    <button id="save-times">Save Time</button>
+    <div class="status" id="status"></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>
